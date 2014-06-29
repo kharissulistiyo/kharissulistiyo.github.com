@@ -9,13 +9,70 @@
 }
 
 
+#header, #teaser{
+  .container{
+    padding: 0;
+  }
+}
+
+#header{
+
+  background: #3BAA83;
+
+  h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    a{
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      text-decoration: none;
+    }
+
+  }
+
+}
+
+#teaser{
+  background: #f7f7f7;
+  padding: 70px 0;
+}
+
 .section{
-  padding: 80px 0 80px 0;
-  border-bottom: 1px solid #d7d7d7;
+  padding: 30px 0 110px 0;
   .clear;
 }
 
 .section-title{
   font-size: 80px;
   text-align: center;
+  margin: 0;
+  padding: 30px 0 0 0;
+  border-bottom: 1px solid #d7d7d7;
+  position: relative;
+
+  &:after{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 40px;
+    background: #d7d7d7;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -40px;
+    right: 0;
+    left: 0;
+  }
+
+}
+
+.how-to, .real-result{
+
+  > h4{
+    margin-bottom: 60px;
+  }
+
 }
