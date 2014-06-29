@@ -24,41 +24,36 @@
 }
 
 
+
 /**
  * All Genericons
  */
 
-<<<<<<< HEAD
 .wpls-genericon {
-=======
-.gpp-sc-genericon {
->>>>>>> 3196838934d047233e4c406f9de20a5a32973ea8
-	display: inline-block;
-	width: 16px;
-	height: 16px;
-	-webkit-font-smoothing: antialiased;
-	font-size: 16px;
-	line-height: 1;
-	font-family: 'Genericons';
-	text-decoration: inherit;
-	font-weight: normal;
-	font-style: normal;
-	vertical-align: top;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'Genericons';
+  text-decoration: inherit;
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: top;
 }
 
 /**
  * IE7 and IE6 hacks
  */
 
-<<<<<<< HEAD
-.wpls-genericon {
-=======
-.gpp-sc-genericon {
->>>>>>> 3196838934d047233e4c406f9de20a5a32973ea8
-	*overflow: auto;
-	*zoom: 1;
-	*display: inline;
+.genericon {
+  *overflow: auto;
+  *zoom: 1;
+  *display: inline;
 }
+
 
 /**
  * Individual icons
