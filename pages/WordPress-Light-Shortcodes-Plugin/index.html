@@ -41,9 +41,12 @@
 
     <div id="header">
 
-      <div class="container">
-        <h1><a href="http://kharissulistiyo.github.io/pages/WordPress-Light-Shortcodes-Plugin/">WordPress Light Shortcode Plugin</a></h1>
-      </div>
+
+        <div class="container">
+            <div class="row">
+              <h1><a href="http://kharissulistiyo.github.io/pages/WordPress-Light-Shortcodes-Plugin/">WordPress Light Shortcode Plugin</a></h1>
+            </div>
+        </div>
 
     </div><!-- /#header -->
 
@@ -257,7 +260,21 @@
     <img src="images/box-shortcode.png" alt="WordPress Light Shortcode Plugin: Box Shortcode">
 
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo repellat sint! Exercitationem sunt earum perferendis quibusdam sit tempore, sed minima praesentium! Maiores minus ut illo cumque officia doloribus eius?</p>
+    <div>
+    <pre>[wpls_box color="green" width="50%" text_align="left" margin_bottom="50px" margin_top="50px"]Alert Box Text[/wpls_box]</pre>
+    <br />
+
+    <strong>color :</strong> <em>grey, yellow, green, red, pink, black, blue, purple </em> <br>
+    <strong>float :</strong> <em>left, right</em> <br />
+    <strong>text_align :</strong> <em>left, center, right</em> <br />
+    <strong>width :</strong> <em>pixels or percents</em> <br />
+    <strong>margin_top :</strong> <em>pixels</em> <br />
+    <strong>margin_bottom :</strong> <em>pixels</em> <br />
+    <strong>heading :</strong> <em>title text</em> <br />
+    <strong>corner :</strong> <em>rounded</em> <br />
+
+    </div>
+
 
   </div><!-- /.how-to -->
 
@@ -372,7 +389,13 @@
 
     <img src="images/highlights.png" alt="WordPress Light Shortcode Plugin: Highlights">
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo repellat sint! Exercitationem sunt earum perferendis quibusdam sit tempore, sed minima praesentium! Maiores minus ut illo cumque officia doloribus eius?</p>
+    <div>
+
+      <pre>[wpls_highlight color="green"]text to highlight[/wpls_highlight]</pre><br />
+
+      <strong>color : </strong> <em>grey, yellow, green, red, pink, black, blue, purple </em> <br />
+
+    </div>
 
   </div><!-- /.how-to -->
 
@@ -405,7 +428,15 @@
 
     <img src="images/divider.png" alt="WordPress Light Shortcode Plugin: Dividers">
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo repellat sint! Exercitationem sunt earum perferendis quibusdam sit tempore, sed minima praesentium! Maiores minus ut illo cumque officia doloribus eius?</p>
+    <div>
+      <pre>[wpls_divider type="dashed" color="green"]</pre> <br />
+
+      <strong>type :</strong> <em>solid, dashed, dotted, double</em><br />
+      <strong>color :</strong> <em>grey, yellow, green, red, pink, black, blue, purple </em><br />
+      <strong>margin_top :</strong> <em>pixels</em> <br />
+      <strong>margin_bottom :</strong> <em>pixels</em> <br />
+
+    </div>
 
   </div><!-- /.how-to -->
 
@@ -446,7 +477,15 @@
 
     <img src="images/accordion.png" alt="WordPress Light Shortcode Plugin: Accordion">
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo repellat sint! Exercitationem sunt earum perferendis quibusdam sit tempore, sed minima praesentium! Maiores minus ut illo cumque officia doloribus eius?</p>
+    <div>
+
+      <pre>[wpls_accordion][wpls_accordion_section title="Section #1"]Section 1 text[/wpls_accordion_section][wpls_accordion_section title="Section #2"]Section 2 text[/wpls_accordion_section][wpls_accordion_section title="Section #3"]Section 3 text[/wpls_accordion_section][/wpls_accordion]</pre>
+      <br />
+
+      <strong>title :</strong> <em>Section's title</em>
+
+
+    </div>
 
   </div><!-- /.how-to -->
 
@@ -480,7 +519,12 @@
 
     <img src="images/toggle.png" alt="WordPress Light Shortcode Plugin: Toggle">
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo repellat sint! Exercitationem sunt earum perferendis quibusdam sit tempore, sed minima praesentium! Maiores minus ut illo cumque officia doloribus eius?</p>
+    <div>
+      <pre>[wpls_toggle title="Toggle Title"]Toggle text[/wpls_toggle]</pre> <br/>
+
+      <strong>title :</strong> <em>Toggle's title</em>
+
+    </div>
 
   </div><!-- /.how-to -->
 
@@ -517,8 +561,12 @@
 
     <img src="images/tabs.png" alt="WordPress Light Shortcode Plugin: Tabs">
 
+    <div>
+      <pre>[wpls_tabgroup][wpls_tab title="Tab #1"]Tab 1 text [/wpls_tab][wpls_tab title="Tab #2"]Tab 2 text[/wpls_tab][/wpls_tabgroup]</pre> <br />
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo repellat sint! Exercitationem sunt earum perferendis quibusdam sit tempore, sed minima praesentium! Maiores minus ut illo cumque officia doloribus eius?</p>
+      <strong>title :</strong> <em>Tab's title</em>
+
+    </div>
 
   </div><!-- /.how-to -->
 
@@ -556,7 +604,32 @@
 
     <img src="images/pricing-tables.png" alt="WordPress Light Shortcode Plugin: Pricing Tables">
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo repellat sint! Exercitationem sunt earum perferendis quibusdam sit tempore, sed minima praesentium! Maiores minus ut illo cumque officia doloribus eius?</p>
+    <div class="code-area">
+
+      [wpls_ls_pricing plan="Premium" cost="$200" per="per month" button_url="#" button_text="Sign Up" color="green" button_color="green" button_target="self" button_rel="nofollow"]
+      <br />
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ul>
+      [/wpls_ls_pricing]
+
+    </div>
+
+    <div>
+
+      <strong>plan :</strong> <em>Plan or package name</em> <br />
+      <strong>cost :</strong> <em>Price</em> <br />
+      <strong>per :</strong> <em>Timeframe</em> <br />
+      <strong>button_url :</strong> <em>URL to details page</em> <br />
+      <strong>button_text :</strong> <em>Button text</em><br />
+      <strong>color :</strong> <em>grey, yellow, green, red, pink, black, blue, purple </em><br />
+      <strong>button_color :</strong> <em>grey, yellow, green, red, pink, black, blue, purple </em><br />
+      <strong>button_target :</strong> <em>_self, _blank</em><br />
+      <strong>button_rel :</strong> <em>nofollow, dofollow</em>
+
+    </div>
+
 
   </div><!-- /.how-to -->
 
@@ -618,7 +691,26 @@
 
     <img src="images/grids.png" alt="WordPress Light Shortcode Plugin: Grids">
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo repellat sint! Exercitationem sunt earum perferendis quibusdam sit tempore, sed minima praesentium! Maiores minus ut illo cumque officia doloribus eius?</p>
+    <div>
+      <strong>Two Columns:</strong><br />
+      <pre>[wpls_grid_1_2_first] This is the first column [/wpls_grid_1_2_first][wpls_grid_1_2_last] This is the first column [/wpls_grid_1_2_last]</pre>
+    </div>
+
+    <div>
+      <strong>Three Columns:</strong><br />
+      <pre>[wpls_grid_1_3_first] This is the first column [/wpls_grid_1_3_first][wpls_grid_1_3] This is the second column [/wpls_grid_1_3][wpls_grid_1_3_last] This is the third and last column [/wpls_grid_1_3_last]</pre>
+    </div>
+
+    <div>
+      <strong>Four Columns:</strong><br />
+      <pre>[wpls_grid_1_4_first] This is the first column [/wpls_grid_1_4_first][wpls_grid_1_4] This is the second column [/wpls_grid_1_4][wpls_grid_1_4] This is the third column [/wpls_grid_1_4][wpls_grid_1_4_last] This is the fourth and last column [/wpls_grid_1_4_last]</pre>
+    </div>
+
+    <div>
+      <strong>Six Columns:</strong><br />
+      <pre>[wpls_grid_1_6_first] This is the first column [/wpls_grid_1_6_first][wpls_grid_1_6] This is the second column [/wpls_grid_1_6][wpls_grid_1_6] This is the third column [/wpls_grid_1_6][wpls_grid_1_6] This is the fourth column [/wpls_grid_1_6][wpls_grid_1_6] This is the fifth column [/wpls_grid_1_6][wpls_grid_1_6_last] This is the sixth and last column [/wpls_grid_1_6_last]</pre>
+    </div>
+
 
   </div><!-- /.how-to -->
 

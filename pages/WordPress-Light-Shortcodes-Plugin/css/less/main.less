@@ -24,6 +24,8 @@ img{
 #header{
 
   background: #3BAA83;
+  position: relative;
+  z-index: 99;
 
   h1{
     margin: 0;
@@ -50,6 +52,23 @@ img{
   padding: 70px 0;
   height:500px;
 
+  &:before{
+background: -moz-linear-gradient(top,  rgba(178,178,178,1) 0%, rgba(255,255,255,0) 41%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(178,178,178,1)), color-stop(41%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(178,178,178,1) 0%,rgba(255,255,255,0) 41%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(178,178,178,1) 0%,rgba(255,255,255,0) 41%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(178,178,178,1) 0%,rgba(255,255,255,0) 41%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(178,178,178,1) 0%,rgba(255,255,255,0) 41%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2b2b2', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+    content: '';
+    top:0;
+    left:0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 
   &.overlayed{
     position: relative;
@@ -101,6 +120,14 @@ img{
     padding:40px;
   }
 
+}
+
+.code-area{
+  background-color: #F5F5F5;
+  padding: 7px;
+  border: 1px solid #E4E4E4;
+  border-radius: 4px;
+  margin-bottom: 15px;
 }
 
 
@@ -184,27 +211,201 @@ img{
     > h3.section-title{
 
       opacity: 1;
-      animation: move;
+      animation: fade1;
       animation-duration: 1.7s;
 
     }
 
+    .how-to{
+        opacity: 1;
+        animation: fade2;
+        animation-duration: 1.9s;
+    }
+
+    .real-result{
+        opacity: 1;
+        animation: fade3;
+        animation-duration: 2.1s;
+    }
+
+  }
+
+
+
+}
+
+
+/** Animation 1 **/
+
+@keyframes fade1{
+
+  0% {
+    opacity: 0;
+  }
+  20%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+
+@-webkit-keyframes fade1{
+
+  0% {
+    opacity: 0;
+  }
+  20%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+
+@-moz-keyframes fade1{
+
+  0% {
+    opacity: 0;
+  }
+  20%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+
+@-o-keyframes fade1{
+
+  0% {
+    opacity: 0;
+  }
+  20%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 
 }
 
 
 
-@keyframes move{
+/** Animation 1 **/
+
+@keyframes fade2{
 
   0% {
     opacity: 0;
   }
-
-  20%{
+  30%{
     opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
 
+}
+
+@-webkit-keyframes fade2{
+
+  0% {
+    opacity: 0;
+  }
+  30%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+
+@-moz-keyframes fade2{
+
+  0% {
+    opacity: 0;
+  }
+  30%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+
+@-o-keyframes fade2{
+
+  0% {
+    opacity: 0;
+  }
+  30%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+
+
+/** Animation 3 **/
+
+@keyframes fade3{
+
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+
+@-webkit-keyframes fade3{
+
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+
+@-moz-keyframes fade3{
+
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+
+@-o-keyframes fade3{
+
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
   100% {
     opacity: 1;
   }
