@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>The Coming Soon Theme</title>
+	<meta name="description" content="Content description goes here" />
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,700' rel='stylesheet' type='text/css'>
+
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" media="all" href="css/ie.css" />
+	<![endif]-->
+
+</head>
+<body>
+
+
+
+<div id="wrapper">
+
+  <div class="container">
+
+		<div id="header">
+
+			<h1 class="heading">Our Website Is Almost Ready</h1>
+
+		</div>
+
+		<!--
+
+    <div id="time-box">
+
+      <div class="time day">
+        <span class="amount"> <span class="text">11</span> </span>
+      </div>
+
+      <div class="time hour">
+        <span class="amount"> <span class="text">11</span> </span>
+      </div>
+
+      <div class="time minute">
+        <span class="amount"> <span class="text">11</span> </span>
+      </div>
+
+      <div class="time second">
+        <span class="amount"> <span class="text">11</span> </span>
+      </div>
+
+    </div> /#time-box -->
+
+		<div id="getting-started"></div>
+
+
+		<div id="menu">
+
+			<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Subscribe</a></li>
+				<li><a href="#">More</a></li>
+			</ul>
+
+		</div>
+
+
+  </div>
+
+</div><!-- /#wrapper -->
+
+
+    <script type='text/javascript' src='js/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+
+		<script>
+
+// Wrapper height
+	/**
+	 * Set hieght of element as per window height
+   * size (resized or not)
+	 * ======================================= */
+
+    var wi = $(window).height();
+
+    // Call in css height attribute
+    $('#wrapper').css({
+      height: wi
+    });
+
+	  $(window).resize(function() {
+
+	  	var wi = $(window).height();
+      // Call in css height attribute
+      $('#wrapper').css({
+        height: wi
+      });
+
+	  });
+
+
+// Count down setting
+$("#getting-started")
+	.countdown("2014/07/09", function(event) {
+	$(this).html(event.strftime('<div class="time day"><span class="amount"><span class="text">%D</span></span></div><div class="time hour"><span class="amount"><span class="text">%H</span></span></div><div class="time minute"><span class="amount"><span class="text">%M</span></span></div><div class="time second"><span class="amount"><span class="text">%S</span></span></div>'));
+});
+
+		</script>
+
+</body>
+</html>
