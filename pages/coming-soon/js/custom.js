@@ -33,8 +33,8 @@ $("#getting-started")
 
 $('.about').click(function(){
 
-    $('#getting-started, #header, #menu, #subscribe').removeClass('fade-in');
-    $('#getting-started, #header, #menu, #subscribe').addClass('fade-out');
+    $('#getting-started, #menu, #subscribe').removeClass('fade-in');
+    $('#getting-started, #menu, #subscribe').addClass('fade-out');
     $('#new-window').delay(2000).fadeIn();
     return false;
 
@@ -44,8 +44,8 @@ $('.about').click(function(){
 $('.close-window').click(function(){
 
   $(this).parent('#new-window').fadeOut().delay(1500);
-  $('#getting-started, #header, #menu, #subscribe').removeClass('fade-out');
-  $('#getting-started, #header, #menu, #subscribe').addClass('fade-in');
+  $('#getting-started, #menu, #subscribe').removeClass('fade-out');
+  $('#getting-started, #menu, #subscribe').addClass('fade-in');
 
 });
 
