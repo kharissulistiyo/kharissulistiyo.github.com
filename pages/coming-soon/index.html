@@ -6,10 +6,14 @@
 	<title>The Coming Soon Theme</title>
 	<meta name="description" content="Content description goes here" />
 
+
+
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,700' rel='stylesheet' type='text/css'>
+
 
 	<!-- Included CSS Files -->
 	<link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/genericons/genericons.css" />
   <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" type="text/css" media="all" href="css/ie.css" />
@@ -54,13 +58,22 @@
 
 		<div id="getting-started"></div>
 
+		<form action="#" method="post" id="subscribe">
+
+			<div class="subscribe-inner">
+
+				<input type="text" name="email" placeholder="Enter your email address here to subscribe." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your email address here to subscribe.'" />
+
+				<input type="submit" name="go" value="Go" />
+
+			</div>
+
+		</form><!-- /#subscribe -->
 
 		<div id="menu">
 
 			<ul>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Subscribe</a></li>
-				<li><a href="#">More</a></li>
+				<li><a href="#" class="about">About Us</a></li>
 			</ul>
 
 		</div>
@@ -68,45 +81,37 @@
 
   </div>
 
+	<div id="new-window">
+
+		<div class="window-inner">
+
+			<h1>About</h1>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro minus hic excepturi assumenda enim reprehenderit, delectus, soluta expedita velit cupiditate accusantium fugit aliquid fugiat totam, culpa debitis deserunt, obcaecati dolorem.</p>
+
+			<ul class="socials">
+				<li><a href="#" alt="f202" class="genericon genericon-twitter"></a></li>
+				<li><a href="#" alt="f201" class="genericon genericon-dribbble"></a></li>
+				<li><a href="#" alt="f203" class="genericon genericon-facebook"></a></li>
+				<li><a href="#" alt="f205" class="genericon genericon-wordpress"></a></li>
+				<li><a href="#" alt="f206" class="genericon genericon-googleplus"></a></li>
+				<li><a href="#" alt="f207" class="genericon genericon-linkedin-alt"></a></li>
+				<li><a href="#" alt="f214" class="genericon genericon-tumblr"></a></li>
+			</ul>
+
+		</div>
+
+		<a alt="f405" href="#" class="close-window genericon genericon-close"></a>
+
+	</div><!-- /#new-window -->
+
 </div><!-- /#wrapper -->
 
 
     <script type='text/javascript' src='js/jquery.min.js'></script>
     <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+		<script type='text/javascript' src='js/custom.js'></script>
 
-		<script>
-
-// Wrapper height
-	/**
-	 * Set hieght of element as per window height
-   * size (resized or not)
-	 * ======================================= */
-
-    var wi = $(window).height();
-
-    // Call in css height attribute
-    $('#wrapper').css({
-      height: wi
-    });
-
-	  $(window).resize(function() {
-
-	  	var wi = $(window).height();
-      // Call in css height attribute
-      $('#wrapper').css({
-        height: wi
-      });
-
-	  });
-
-
-// Count down setting
-$("#getting-started")
-	.countdown("2014/07/09", function(event) {
-	$(this).html(event.strftime('<div class="time day"><span class="amount"><span class="text">%D</span></span></div><div class="time hour"><span class="amount"><span class="text">%H</span></span></div><div class="time minute"><span class="amount"><span class="text">%M</span></span></div><div class="time second"><span class="amount"><span class="text">%S</span></span></div>'));
-});
-
-		</script>
 
 </body>
 </html>
