@@ -1,7 +1,11 @@
+body {
+  background-color: #41413f; }
+
 #wrapper {
   width: 100%;
   position: relative;
-  background: #343433 url("../images/bg.jpg") no-repeat center center fixed;
+  background-color: #343432;
+  background: url("../images/bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -15,12 +19,11 @@
   display: block;
   background: rgba(88, 82, 72, 0.2);
   font-family: 'Roboto', sans-serif;
-  text-align: center;
-  color: #363732; }
+  text-align: center; }
   #header h1 {
     margin: 0 auto;
     display: table;
-    color: #fff;
+    color: white;
     padding-top: 50px;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
@@ -49,7 +52,7 @@
       float: left;
       padding: 10px 20px; }
       #menu ul li a {
-        color: #fff;
+        color: white;
         outline: none;
         text-transform: uppercase; }
 
@@ -69,9 +72,9 @@
     max-width: 100%;
     border: none;
     outline: none !important;
-    color: #fff;
     background: transparent;
     border-bottom: 1px solid rgba(224, 224, 224, 0.4);
+    color: white;
     text-align: center; }
   #subscribe input[type="submit"] {
     font-family: 'Roboto', sans-serif;
@@ -88,9 +91,9 @@
     border: none;
     outline: none !important;
     background: rgba(224, 224, 224, 0.4);
+    color: white;
     border-radius: 100%;
     padding: 20px;
-    color: #fff;
     text-transform: uppercase; }
     #subscribe input[type="submit"]:hover {
       background: rgba(224, 224, 224, 0.3); }
@@ -141,8 +144,7 @@
   display: table;
   text-align: center;
   margin: 0 auto;
-  display: none;
-  color: #fff; }
+  display: none; }
   #new-window .window-inner {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
@@ -154,6 +156,7 @@
     padding-left: 80px;
     padding-right: 80px;
     background: rgba(88, 82, 72, 0.4);
+    color: white;
     margin: 0 auto;
     line-height: 24px; }
 
@@ -162,7 +165,7 @@
   bottom: 20px;
   text-decoration: none !important;
   outline: none !important;
-  color: #fff;
+  color: white;
   font-size: 32px;
   display: inline-block;
   margin-left: auto;
@@ -170,7 +173,7 @@
   .close-window:before {
     margin-left: -24px; }
   .close-window:hover {
-    color: #fff;
+    color: white;
     text-decoration: none; }
 
 .time {
@@ -189,7 +192,7 @@
     bottom: 20px;
     left: 0;
     right: 0;
-    color: #fff; }
+    color: white; }
   .time.day:after {
     content: 'Days'; }
   .time.hour:after {
@@ -222,7 +225,7 @@
     margin-top: -0.5em;
     text-align: center;
     font-size: 50px;
-    color: #fff; }
+    color: white; }
 
 .socials {
   list-style: none;

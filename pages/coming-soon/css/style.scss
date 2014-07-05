@@ -1,7 +1,51 @@
+// Mixins
+// ========================
+
+// Wrapper
+$wrapper_bg: #343432;
+
+// Header
+$header_bg: rgba(88,82,72,.2);
+$header_color: #ffffff;
+
+// Menu
+$menu_color: #ffffff;
+
+// Circles
+$circle_color: #ffffff;
+$circle_bg: rgba(88,82,72,0.4);
+$circle_border: rgba(224,224,224,0.4);
+
+// Social
+$social_color: rgba(224,224,224,0.5);
+$social_color_hover: rgba(224,224,224,1);
+
+// Info Box
+$infobox_bg: rgba(88,82,72,0.4);
+$infobox_color: #fff;
+
+// Close Button
+$close_btn: #ffffff;
+$close_btn_hover: #ffffff;
+
+// Subscribe
+$input_border: rgba(224,224,224,0.4);
+$input_color: #ffffff;
+
+$submit_bg: rgba(224,224,224,0.4);
+$submit_color: #ffffff;
+$submit_bg_hover: rgba(224,224,224,0.3);
+
+
+body{
+  background-color: lighten($wrapper_bg, 5%);
+}
+
 #wrapper{
   width: 100%;
   position: relative;
-  background:#343433 url('../images/bg.jpg') no-repeat center center fixed;
+  background-color: $wrapper_bg;
+  background: url('../images/bg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,15 +58,14 @@
   top: 0;
   left: 0;
   display: block;
-  background: rgba(88,82,72,.2);
+  background: $header_bg;
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  color: #363732;
 
   h1{
     margin:0 auto;
     display: table;
-    color: #fff;
+    color: $header_color;
     padding-top: 50px;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
@@ -66,7 +109,7 @@
       padding: 10px 20px;
 
       a{
-        color: #fff;
+        color: $menu_color;
         outline: none;
         text-transform: uppercase;
       }
@@ -98,9 +141,9 @@
     max-width: 100%;
     border: none;
     outline: none !important;
-    color: #fff;
     background: transparent;
-    border-bottom: 1px solid rgba(224,224,224,0.4);
+    border-bottom: 1px solid $input_border;
+    color: $input_color;
     text-align: center;
   }
 
@@ -118,14 +161,14 @@
     display: none;
     border: none;
     outline: none !important;
-    background: rgba(224,224,224,0.4);
+    background: $submit_bg;
+    color: $submit_color;
     border-radius: 100%;
     padding: 20px;
-    color: #fff;
     text-transform: uppercase;
 
     &:hover{
-      background: rgba(224,224,224,0.3);
+      background: $submit_bg_hover;
     }
 
     &.visible{
@@ -192,7 +235,6 @@
   text-align: center;
   margin:0 auto;
   display: none;
-  color: #fff;
 
   .window-inner{
     font-family: 'Roboto', sans-serif;
@@ -204,7 +246,8 @@
     max-width: 550px;
     padding-left: 80px;
     padding-right: 80px;
-    background: rgba(88,82,72,0.4);
+    background: $infobox_bg;
+    color: $infobox_color;
     margin:0 auto;
     line-height: 24px;
   }
@@ -216,7 +259,7 @@
   bottom: 20px;
   text-decoration: none !important;
   outline: none !important;
-  color: #fff;
+  color: $close_btn;
   font-size: 32px;
   display: inline-block;
   margin-left: auto;
@@ -227,7 +270,7 @@
   }
 
   &:hover{
-    color: #fff;
+    color: $close_btn_hover;
     text-decoration: none;
   }
 
@@ -252,7 +295,7 @@
     bottom: 20px;
     left: 0;
     right: 0;
-    color: #fff;
+    color: $circle_color;
   }
 
   &.day{
@@ -288,8 +331,8 @@
     width: 100%;
     height:0;
     padding-bottom: 100%;
-    background: rgba(88,82,72,0.4);
-    border: 1px solid rgba(224,224,224,0.4);
+    background: $circle_bg;
+    border: 1px solid $circle_border;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
@@ -305,7 +348,7 @@
     margin-top:-0.5em;
     text-align:center;
     font-size: 50px;
-    color: #fff;
+    color: $circle_color;
   }
 
 }
@@ -325,12 +368,12 @@
     padding-right: 10px;
 
     a{
-      color: rgba(224,224,224,0.5);
+      color: $social_color;
       font-size: 26px;
       text-decoration: none !important;
 
       &:hover{
-        color: rgba(224,224,224,1);
+        color: $social_color_hover;
       }
 
     }
