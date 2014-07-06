@@ -207,7 +207,7 @@ body{
 
 }
 
-#time-box, #getting-started{
+#time-box{
   position: absolute;
   display: block;
   width: 860px;
@@ -387,7 +387,7 @@ body{
 
 @media screen and (max-width: 976px){
 
-  #getting-started{
+  #time-box{
     margin-top: -60px;
     max-width: 670px;
   }
@@ -410,7 +410,7 @@ body{
 
 @media screen and (max-width: 756px){
 
-  #getting-started{
+  #time-box{
     margin-top: -60px;
     max-width: 550px;
   }
@@ -433,7 +433,7 @@ body{
 
 @media screen and (max-width: 596px){
 
-  #getting-started{
+  #time-box{
     margin-top: -120px;
     max-width: 260px;
   }

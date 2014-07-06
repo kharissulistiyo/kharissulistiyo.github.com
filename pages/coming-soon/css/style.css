@@ -121,7 +121,7 @@ body {
         -moz-animation-duration: .3s;
         -o-animation-duration: .3s; }
 
-#time-box, #getting-started {
+#time-box {
   position: absolute;
   display: block;
   width: 860px;
@@ -130,7 +130,7 @@ body {
   right: 0;
   top: 50%;
   bottom: 0; }
-  #time-box:before, #time-box:after, #getting-started:before, #getting-started:after {
+  #time-box:before, #time-box:after {
     content: '';
     display: block;
     clear: both; }
@@ -247,7 +247,7 @@ body {
         color: #e0e0e0; }
 
 @media screen and (max-width: 976px) {
-  #getting-started {
+  #time-box {
     margin-top: -60px;
     max-width: 670px; }
 
@@ -260,7 +260,7 @@ body {
     .time:first-child {
       margin-left: 0; } }
 @media screen and (max-width: 756px) {
-  #getting-started {
+  #time-box {
     margin-top: -60px;
     max-width: 550px; }
 
@@ -273,7 +273,7 @@ body {
     .time:first-child {
       margin-left: 0; } }
 @media screen and (max-width: 596px) {
-  #getting-started {
+  #time-box {
     margin-top: -120px;
     max-width: 260px; }
 
