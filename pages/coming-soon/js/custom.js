@@ -33,22 +33,79 @@ $("#time-box")
 
 $('.about').click(function(){
 
-    $('#time-box, #menu, #subscribe').removeClass('fade-in');
-    $('#time-box, #menu, #subscribe').addClass('fade-out');
-    $('#new-window').delay(2000).fadeIn();
-    return false;
+  $('#about').removeClass('dynamic-transit');
+  $('#about').addClass('dynamic-transit-on');
+  $('.front').removeClass('fade-in');
+  $('.front').addClass('fade-out');
+  $('#about').delay(2000).fadeIn();
+  return false;
 
 
 });
 
 $('.close-window').click(function(){
 
-  $(this).parent('#new-window').fadeOut().delay(1500);
-  $('#time-box, #menu, #subscribe').removeClass('fade-out');
-  $('#time-box, #menu, #subscribe').addClass('fade-in');
+  $(this).parent('#about').fadeOut().delay(1500);
+  $('.front').addClass('fade-in');
+  $('#about').removeClass('dynamic-transit-on');
+  return false;
 
 });
 
+$('.demo').click(function(){
+
+
+    $('.front').removeClass('fade-in');
+    $('.front').addClass('fade-out');
+    
+    if ($('div').hasClass('dynamic-transit-on')) {
+        $('.dynamic-transit-on').removeClass('fade-in');
+        $('.dynamic-transit-on').addClass('fade-out');
+    }
+  
+    
+    $('#show-demo').delay(2000).fadeIn();
+    
+    $(this).hide();
+    $('.demo-close').delay(5000).show();
+    
+
+    return false;
+
+
+});
+
+$('.demo-close').click(function(){
+
+
+  $('#show-demo').fadeOut().delay(1500);
+  if ($('div').hasClass('dynamic-transit-on')) {
+      $('.dynamic-transit-on').removeClass('fade-out');
+      $('.dynamic-transit-on').addClass('fade-in');
+  } else {
+    
+    $('.front').removeClass('fade-out');
+    $('.front').addClass('fade-in'); 
+    
+  }
+  
+  $(this).hide();
+  $('.demo').delay(5000).show();
+
+  return false;
+
+});
+
+
+
+// Show subscription form bock
+
+$('.subscription-teaser span').click(function(){
+
+  $(this).addClass('hide');
+  $('#subscribe form').addClass('display');
+
+});
 
 // Form
 
@@ -81,3 +138,21 @@ $('#subscribe input[type="text"]').focus(function() {
     input.val(input.attr("'placeholder'"));
   }
 }).blur();
+
+// Show person bio
+
+$('.show-person-bio').click(function(){
+
+  if($(this).parent().next('.person-bio').hasClass('display-none')){
+
+    $(this).parent().next('.person-bio').removeClass('display-none');
+
+  } else {
+
+    $(this).parent().next('.person-bio').addClass('display-none');
+
+  }
+
+  return false;
+
+});

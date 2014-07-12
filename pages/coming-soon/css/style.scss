@@ -36,6 +36,28 @@ $submit_bg: rgba(224,224,224,0.4);
 $submit_color: #ffffff;
 $submit_bg_hover: rgba(224,224,224,0.3);
 
+.clearfix{
+  &:before, &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+.zero-margin-padding{
+  margin: 0;
+  padding: 0;
+}
+
+.display-none{
+  display: none;
+}
 
 body{
   background-color: lighten($wrapper_bg, 5%);
@@ -57,20 +79,21 @@ body{
   width: 100%;
   top: 0;
   left: 0;
+  height: 57px;
   display: block;
   background: $header_bg;
   font-family: 'Roboto', sans-serif;
-  text-align: center;
 
   h1{
-    margin:0 auto;
+    margin-top:0;
+    margin-bottom:0;
     display: table;
     color: $header_color;
     padding-top: 50px;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 26px;
-    text-align: center;
+    text-transform: uppercase;
   }
 
   h1{
@@ -78,6 +101,64 @@ body{
   }
 
 }
+
+
+#branding{
+  width: 25%;
+  float: left;
+
+  .inner{
+    border-right: 1px solid $circle_border;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+}
+
+#site-notification{
+  width: 75%;
+  float: right;
+  color: #fff;
+  font-family: "Roboto",sans-serif;
+  font-weight: 100;
+  
+  .inner{
+    margin-left: 20px;
+  }
+
+  .notification{
+    width:70%;
+    float: left;
+    line-height: 57px;
+    margin: 0;
+  }
+
+  .single-action-btn{
+    width:30%;
+    float:right;
+    text-align:right;
+    line-height: 57px;
+    
+    span{
+      margin-top: 18px;
+    }    
+
+    a{
+      color: #fff;
+      outline: none !important;
+      text-decoration: none !important;
+    }
+    
+    .demo-close{
+      display: none;
+    }
+
+  }
+
+}
+
 
 .info{
 
@@ -94,7 +175,7 @@ body{
 
   ul{
     margin: 0 auto;
-    padding: 0;
+    padding: 0 0 20px 0;
     display: table;
     list-style: none;
 
@@ -112,6 +193,15 @@ body{
         color: $menu_color;
         outline: none;
         text-transform: uppercase;
+        padding:10px 12px;
+        border: 1px solid #ffffff;
+        text-decoration: none;
+
+        &:hover{
+          background: #fff;
+          color: #000;
+        }
+
       }
 
     }
@@ -124,11 +214,11 @@ body{
 #subscribe{
 
   position: absolute;
-  bottom: 50px;
+  bottom: 18%;
   left: 0;
   right: 0;
 
-  .subscribe-inner{
+  .inner{
     margin:0 auto;
     max-width: 310px;
     position: relative;
@@ -205,6 +295,34 @@ body{
 
   }
 
+  .subscription-teaser{
+    text-align: center;
+    color: #fff;
+
+    span{
+
+      cursor: pointer;
+
+      &.hide{
+        display: none;
+        visibility: hidden;
+      }
+
+    }
+
+  }
+
+  form{
+    display: none;
+    visibility: hidden;
+
+    &.display{
+      display: block;
+      visibility: visible;
+    }
+
+  }
+
 }
 
 #time-box{
@@ -225,16 +343,38 @@ body{
 
 }
 
-#new-window{
+#release-message{
+  font-family: "Roboto",sans-serif;
+  font-weight: 100;
   position: absolute;
-  top: 0;
+  display: block;
+  width: 860px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 20%;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+}
+
+.new-window{
+  position: absolute;
+  top: 57px;
   left: 0;
   right: 0;
   bottom: 0;
   display: table;
   text-align: center;
   margin:0 auto;
+  background: $infobox_bg;
   display: none;
+
+  &#show-demo{
+    text-align: left;
+  }
+
 
   .window-inner{
     font-family: 'Roboto', sans-serif;
@@ -243,13 +383,17 @@ body{
     top: 30%;
     left: 0;
     right: 0;
-    max-width: 550px;
-    padding-left: 80px;
-    padding-right: 80px;
-    background: $infobox_bg;
     color: $infobox_color;
     margin:0 auto;
     line-height: 24px;
+  }
+
+  &#about{
+
+    .window-inner{
+      top: 10%;
+    }
+
   }
 
 }
@@ -378,6 +522,57 @@ body{
 
     }
 
+  }
+
+}
+
+
+.personals{
+  margin-top: 50px;
+}
+
+.person{
+
+  position: relative;
+  height: 220px;
+
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: yellow;
+    height: 220px;
+    width: 100%;
+  }
+
+  .person-data{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    text-align: left;
+    padding: 10px 0 5px 10px;
+    background: $header_bg;
+  }
+
+  a{
+    outline: none;
+    text-decoration: none;
+  }
+  
+  .show-person-bio{
+    color: #fff;
+    float: right;
+    
+    span{
+      margin-top: 4px;
+    }
+    
+  }
+  
+  .person-bio{
+    font-style: italic;
   }
 
 }
