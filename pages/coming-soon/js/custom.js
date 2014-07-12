@@ -1,3 +1,15 @@
+jQuery( document ).ready(function($) {
+
+  $('#wrapper').waitForImages(function() {
+
+      alert('Image is loaded!');
+
+  });
+
+});
+
+
+
 // Wrapper height
   /**
    * Set hieght of element as per window height
@@ -57,18 +69,18 @@ $('.demo').click(function(){
 
     $('.front').removeClass('fade-in');
     $('.front').addClass('fade-out');
-    
+
     if ($('div').hasClass('dynamic-transit-on')) {
         $('.dynamic-transit-on').removeClass('fade-in');
         $('.dynamic-transit-on').addClass('fade-out');
     }
-  
-    
+
+
     $('#show-demo').delay(2000).fadeIn();
-    
+
     $(this).hide();
     $('.demo-close').delay(5000).show();
-    
+
 
     return false;
 
@@ -83,12 +95,12 @@ $('.demo-close').click(function(){
       $('.dynamic-transit-on').removeClass('fade-out');
       $('.dynamic-transit-on').addClass('fade-in');
   } else {
-    
+
     $('.front').removeClass('fade-out');
-    $('.front').addClass('fade-in'); 
-    
+    $('.front').addClass('fade-in');
+
   }
-  
+
   $(this).hide();
   $('.demo').delay(5000).show();
 
