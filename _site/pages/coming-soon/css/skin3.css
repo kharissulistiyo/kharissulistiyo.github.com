@@ -1,0 +1,50 @@
+body {
+  background-color: #41413f; }
+
+#wrapper {
+  background-color: #343432;
+  background: url("http://kharissulistiyo.github.io/pages/coming-soon/images/bg3.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#header {
+  background: rgba(88, 82, 72, 0.2); }
+  #header h1 {
+    color: white; }
+
+#menu ul li a {
+  color: white; }
+
+#subscribe input[type="text"] {
+  border-bottom: 1px solid rgba(224, 224, 224, 0.8);
+  color: white; }
+#subscribe input[type="submit"] {
+  background: rgba(248, 232, 166, 0.6);
+  color: white; }
+  #subscribe input[type="submit"]:hover {
+    background: rgba(245, 223, 133, 0.6); }
+
+#new-window .window-inner {
+  background: rgba(88, 82, 72, 0.2);
+  color: white; }
+
+.time:after {
+  color: white; }
+
+.amount:after {
+  background: rgba(88, 82, 72, 0.2);
+  border: 1px solid rgba(224, 224, 224, 0.3); }
+.amount .text {
+  color: white; }
+
+.socials li a {
+  color: rgba(224, 224, 224, 0.5); }
+  .socials li a:hover {
+    color: #e0e0e0; }
+
+.close-window {
+  color: white; }
+  .close-window:hover {
+    color: white; }

@@ -1,0 +1,150 @@
+// Mixins
+// ========================
+
+// Wrapper
+$wrapper_bg: #343432;
+
+// Header
+$header_bg: rgba(20,20,20,.4);
+$header_color: #ffffff;
+
+// Menu
+$menu_color: #000000;
+
+// Circles
+$circle_color: #ffffff;
+$circle_bg: $header_bg;
+$circle_border: rgba(20,20,20,.1);
+
+// Social
+$social_color: rgba(224,224,224,0.5);
+$social_color_hover: rgba(224,224,224,1);
+
+// Info Box
+$infobox_bg: $header_bg;
+$infobox_color: #fff;
+
+// Close Button
+$close_btn: #000000;
+$close_btn_hover: lighten($close_btn, 10%);
+
+// Subscribe
+$input_border: #000000;
+$input_color: #000000;
+
+$submit_bg: rgba(20,20,20,.6);
+$submit_color: #ffffff;
+$submit_bg_hover: darken($submit_bg, 7%);
+
+
+body{
+  background-color: lighten($wrapper_bg, 5%);
+}
+
+#wrapper{
+  background-color: $wrapper_bg;
+  background: url('../images/bg2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header{
+
+  background: $header_bg;
+
+  h1{
+    color: $header_color;
+  }
+
+}
+
+#menu{
+
+  ul{
+    li{
+      a{
+        color: $menu_color;
+      }
+    }
+  }
+
+}
+
+#subscribe{
+
+  input[type="text"]{
+    border-bottom: 1px solid $input_border;
+    color: $input_color;
+  }
+
+  input[type="submit"]{
+    background: $submit_bg;
+    color: $submit_color;
+
+    &:hover{
+      background: $submit_bg_hover;
+    }
+
+  }
+
+}
+
+#new-window{
+
+  .window-inner{
+    background: $infobox_bg;
+    color: $infobox_color;
+  }
+
+}
+
+
+.time{
+
+  &:after{
+    color: $circle_color;
+  }
+
+}
+
+.amount{
+
+  &:after{
+    background: $circle_bg;
+    border: 1px solid $circle_border;
+  }
+
+  .text{
+    color: $circle_color;
+  }
+
+}
+
+
+.socials{
+
+  li{
+
+    a{
+      color: $social_color;
+
+      &:hover{
+        color: $social_color_hover;
+      }
+
+    }
+
+  }
+
+}
+
+.close-window{
+  color: $close_btn;
+
+  &:hover{
+    color: $close_btn_hover;
+  }
+
+}

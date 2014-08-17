@@ -1,0 +1,150 @@
+// Mixins
+// ========================
+
+// Wrapper
+$wrapper_bg: #343432;
+
+// Header
+$header_bg: rgba(88,82,72,.2);
+$header_color: #ffffff;
+
+// Menu
+$menu_color: #ffffff;
+
+// Circles
+$circle_color: #ffffff;
+$circle_bg: $header_bg;
+$circle_border: rgba(224,224,224,0.3);
+
+// Social
+$social_color: rgba(224,224,224,0.5);
+$social_color_hover: rgba(224,224,224,1);
+
+// Info Box
+$infobox_bg: $header_bg;
+$infobox_color: #fff;
+
+// Close Button
+$close_btn: #ffffff;
+$close_btn_hover: #ffffff;
+
+// Subscribe
+$input_border: rgba(224,224,224,0.8);
+$input_color: #ffffff;
+
+$submit_bg: rgba(248,232,166,.6);
+$submit_color: #ffffff;
+$submit_bg_hover: darken($submit_bg, 7%);
+
+
+body{
+  background-color: lighten($wrapper_bg, 5%);
+}
+
+#wrapper{
+  background-color: $wrapper_bg;
+  background: url('http://kharissulistiyo.github.io/pages/coming-soon/images/bg3.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header{
+
+  background: $header_bg;
+
+  h1{
+    color: $header_color;
+  }
+
+}
+
+#menu{
+
+  ul{
+    li{
+      a{
+        color: $menu_color;
+      }
+    }
+  }
+
+}
+
+#subscribe{
+
+  input[type="text"]{
+    border-bottom: 1px solid $input_border;
+    color: $input_color;
+  }
+
+  input[type="submit"]{
+    background: $submit_bg;
+    color: $submit_color;
+
+    &:hover{
+      background: $submit_bg_hover;
+    }
+
+  }
+
+}
+
+#new-window{
+
+  .window-inner{
+    background: $infobox_bg;
+    color: $infobox_color;
+  }
+
+}
+
+
+.time{
+
+  &:after{
+    color: $circle_color;
+  }
+
+}
+
+.amount{
+
+  &:after{
+    background: $circle_bg;
+    border: 1px solid $circle_border;
+  }
+
+  .text{
+    color: $circle_color;
+  }
+
+}
+
+
+.socials{
+
+  li{
+
+    a{
+      color: $social_color;
+
+      &:hover{
+        color: $social_color_hover;
+      }
+
+    }
+
+  }
+
+}
+
+.close-window{
+  color: $close_btn;
+
+  &:hover{
+    color: $close_btn_hover;
+  }
+
+}

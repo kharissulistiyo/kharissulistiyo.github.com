@@ -1,27 +1,27 @@
-<header class="site-header">
+<header>
 
-  <div class="wrapper">
+  <a href="{{ site.baseurl }}/" title="Hi!">
+    <img src="{{ "/images/kharis-sulistiyono.jpg" | prepend: site.baseurl }}" alt="{{ site.title }}" class="avatar" />
+  </a>
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.description }}</p>
 
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
 
-      <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </nav>
+  <p class="view"><a href="https://github.com/kharissulistiyo">View My GitHub Profile</a></p>
 
-  </div>
+  <p>I'm available for freelance works.<br /> Hire me <a href="mailto:kharisulistiyo@gmail.com" target="_blank">here</a>.</p>
+
+<p><iframe style="width: 156px; height: 20px;" data-twttr-rendered="true" title="Twitter Follow Button" class="twitter-follow-button twitter-follow-button" src="http://platform.twitter.com/widgets/follow_button.1383953108.html#_=1384003407626&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=kharissulistiyo&amp;show_count=false&amp;show_screen_name=true&amp;size=m" allowtransparency="true" id="twitter-widget-0" frameborder="0" scrolling="no"></iframe>
+<script src="http://platform.twitter.com/widgets.js" id="twitter-wjs"></script><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+
+
+<div class="trigger">
+  {% for page in site.pages %}
+    {% if page.title %}
+    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a><br />
+    {% endif %}
+  {% endfor %}
+</div>
 
 </header>

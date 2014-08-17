@@ -1,0 +1,50 @@
+body {
+  background-color: #41413f; }
+
+#wrapper {
+  background-color: #343432;
+  background: url("../images/bg2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#header {
+  background: rgba(20, 20, 20, 0.4); }
+  #header h1 {
+    color: white; }
+
+#menu ul li a {
+  color: black; }
+
+#subscribe input[type="text"] {
+  border-bottom: 1px solid black;
+  color: black; }
+#subscribe input[type="submit"] {
+  background: rgba(20, 20, 20, 0.6);
+  color: white; }
+  #subscribe input[type="submit"]:hover {
+    background: rgba(2, 2, 2, 0.6); }
+
+#new-window .window-inner {
+  background: rgba(20, 20, 20, 0.4);
+  color: white; }
+
+.time:after {
+  color: white; }
+
+.amount:after {
+  background: rgba(20, 20, 20, 0.4);
+  border: 1px solid rgba(20, 20, 20, 0.1); }
+.amount .text {
+  color: white; }
+
+.socials li a {
+  color: rgba(224, 224, 224, 0.5); }
+  .socials li a:hover {
+    color: #e0e0e0; }
+
+.close-window {
+  color: black; }
+  .close-window:hover {
+    color: #1a1a1a; }
