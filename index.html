@@ -1,73 +1,23 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+---
+layout: default
+---
 
-    <title>Kharis Sulistiyono | WordPress Theme and Plugin Developer</title>
+<div class="home">
 
-	<link rel="shortcut icon" href="images/kharis-sulistiyono-favicon.png" type="image/x-icon" />
+  <h1 class="page-heading">Posts</h1>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <a href="http://kharissulistiyo.github.io/" title="Hi!">
-  		    <img src="images/kharis-sulistiyono.jpg" alt="Kharis Sulistiyono" class="avatar" />
-        </a>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-        <h1>Kharis Sulistiyono</h1>
-        <p>WordPress theme and plugin developer.</p>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-
-        <p class="view"><a href="https://github.com/kharissulistiyo">View My GitHub Profile</a></p>
-
-		<p>I'm available for freelance works.<br /> Hire me <a href="mailto:kharisulistiyo@gmail.com" target="_blank">here</a>.</p>
-
-		<p><iframe style="width: 156px; height: 20px;" data-twttr-rendered="true" title="Twitter Follow Button" class="twitter-follow-button twitter-follow-button" src="http://platform.twitter.com/widgets/follow_button.1383953108.html#_=1384003407626&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=kharissulistiyo&amp;show_count=false&amp;show_screen_name=true&amp;size=m" allowtransparency="true" id="twitter-widget-0" frameborder="0" scrolling="no"></iframe>
-		<script src="http://platform.twitter.com/widgets.js" id="twitter-wjs"></script><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
-
-      </header>
-      <section>
-
-        <h2>Hello, there!</h2>
-		<p>I write poetry on a code editor. Falling in love to WordPress. I play PHP, SASS, and jQuery. I contribute to WordPress as <a href="http://profiles.wordpress.org/kharisblank/" target="_blank" title="View my contribution activity track.">theme reviewer</a> in my spare time. </p>
-
-		<p>To contact me about a project or any of my work send me an <a href="mailto:kharisulistiyo@gmail.com" target="_blank">email</a>. You can also get in touch with me via <a href="http://twitter.com/kharissulistiyo" target="_blank">Twitter</a>.</p>
-
-		<h3>Theme:</h3>
-		<ul>
-		<li><a href="http://wordpress.org/extend/themes/rundown" target="_blank">Rundown</a></li>
-		</ul>
-
-		<h3>Plugins:</h3>
-		<ul>
-      <li><a href="http://wordpress.org/plugins/woocommerce-out-of-stock-message/" target="_blank">WooCommerce Out of Stock Message Plugin</a></li>
-      <li><a href="http://wordpress.org/plugins/woocommerce-custom-product-data-fields/" target="_blank">WooCommerce Custom Product Data Fields</a></li>
-			<li><a href="http://wordpress.org/plugins/7k-image-uploader-meta-box/">7K Image Uploader Meta Box</a></li>
-      <li><a href="http://wordpress.org/plugins/wp-smart-pagination" target="_blank">WP Smart Pagination</a></li>
-			<li><a href="http://wordpress.org/plugins/ff-tab-widget" target="_blank">FF Tab Widget</a></li>
-			<li><a href="http://wordpress.org/plugins/browse-topic" target="_blank">Browse Topic</a></li>
-			<li><a href="http://wordpress.org/plugins/wp-dropdown-hierarchial-category-ui" target="_blank">WP Dropdown Hierarchical Category UI</a></li>
-		</ul>
-
-
-		<h5>On the Press:</h5>
-		<ul>
-			<li><a href="http://www.webdesignerdepot.com/2012/12/85-new-wordpress-themes-to-inspire-you/" target="_blank" title="My work listed here">Webdesignerdepot</a></li>
-		</ul>
-
-
-	  </section>
-
-    </div><!-- /.wrapper -->
-
-  </body>
-</html>
+</div>
