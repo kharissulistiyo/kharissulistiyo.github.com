@@ -6,4 +6,8 @@ permalink: /post/trying-ghost-blogging-platform/
 categories: ghost
 ---
 
+[Ghost]: http://ghost.org
+
+Yesterday I gave a try to [Ghost][]. It is very awesome. Fast and easy to install. The post management is insanely simple. 
+
 <img src="https://raw.githubusercontent.com/kharissulistiyo/kharissulistiyo.github.com/master/content/2014/08/ghost.png" alt="Trying Ghost Blogging Platform"/>
